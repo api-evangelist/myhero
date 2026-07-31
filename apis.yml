@@ -1,7 +1,26 @@
 aid: myhero
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/myhero.png
 name: Myhero
-description: Myhero is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: TradeHero (operated by My Manisku Pte Ltd, Singapore) is a gamified virtual
+  stock-trading and social-investing mobile app. Users start with 100,000 virtual dollars
+  to practice trading risk-free across 28 stock exchanges and 10 currency pairs, follow
+  and copy validated top traders, learn through a short-tutorial investing academy, and
+  compete on cash-prize leaderboards backed by real-time market data. Founded by former
+  Wall Street trading-platform and Electronic Arts mobile-gaming veterans, and backed by
+  venture firms including 500 Global, KPCB China, and IPV Capital. The public surface is a
+  consumer mobile app and marketing site; no developer API, SDK, or developer portal is
+  published.
 url: https://raw.githubusercontent.com/api-evangelist/myhero/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Fintech
+- Trading
+- Investing
+- Stock Market
+- Social Trading
+- Mobile
+- Gamification
+- Singapore
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/myhero-domain-security.yml
 - type: Website
   url: https://en.tradehero.mobi
+- type: Blog
+  url: https://tradehero.mobi/en-sub/blog
+- type: Support
+  url: https://tradehero.mobi/en-sub/contact
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
